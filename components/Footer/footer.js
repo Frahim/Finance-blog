@@ -98,7 +98,7 @@ export default async function Footer() {
                                 <ul>
                                     {servicesMenu?.menuItems.nodes.map(item => (
                                         <li key={item.id}>
-                                            <Link href={`/category/${removeBaseUrl(item.url)}`}>{item.label}</Link>
+                                            <Link href={`/${removeBaseUrl(item.url)}`}>{item.label}</Link>
                                         </li>
                                     ))}
                                 </ul>
