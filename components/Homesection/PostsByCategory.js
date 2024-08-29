@@ -104,7 +104,6 @@ export default function PostsByCategory({ categoryName, style = "default" }) {
     return (
 
         <>
-
             {style === "styleA" && (
                 <section className="postbycategory styleA pt-100 pb-100">
                     {filteredCategory && (
@@ -131,7 +130,6 @@ export default function PostsByCategory({ categoryName, style = "default" }) {
                                     </Link>
                                 </div>
                             </div>
-
                         </div>
                     )}
                     <div className="container">
@@ -144,7 +142,6 @@ export default function PostsByCategory({ categoryName, style = "default" }) {
                                         month: 'short',
                                         year: 'numeric',
                                     });
-
                                     return (
                                         <div key={item.id} className="col-xl-4 mb-4 mb-md-0">
                                             <div className="styleAItem">
@@ -175,7 +172,6 @@ export default function PostsByCategory({ categoryName, style = "default" }) {
                                                         </div>
 
                                                         <Link href={`/post/${item.slug}`} className="blogTitle fc-black">{item.title}</Link>
-
                                                         <div className="blog-info d-flex align-items-center gap-2 fc-dark">
                                                             <div
                                                                 dangerouslySetInnerHTML={{ __html: limitWords(item.excerpt, 20) }} // Limit to 20 words

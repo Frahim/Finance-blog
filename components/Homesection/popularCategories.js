@@ -1,10 +1,7 @@
 // components/Home.js
-
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-
-
 async function getCategories() {
   try {
     const query = `
@@ -22,7 +19,6 @@ async function getCategories() {
         }
       }
     `;
-
     const res = await fetch(process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT, {
       method: "POST",
       headers: {
@@ -32,16 +28,12 @@ async function getCategories() {
         query: query,
       }),
     });
-
     if (!res.ok) {
       throw new Error(`HTTP error! Status: ${res.status}`);
     }
-
     const { data } = await res.json();
-
     // Correcting the data extraction logic
     return data.categories.edges.map((edge) => edge.node);
-
   } catch (error) {
     console.error("Error fetching categories:", error);
     return []; // Return an empty array or handle the error as needed
@@ -88,12 +80,10 @@ export default async function AllCategories() {
                           </span>
                         </Link>
                       </div>
-
                     </div>
                   </div>
                 </>
               )
-
             })}
           </div>
         </div>
