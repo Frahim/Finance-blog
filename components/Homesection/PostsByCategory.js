@@ -84,7 +84,7 @@ export default function PostsByCategory({ categoryName, style = "default" }) {
             try {
                 const fetchedPosts = await fetchPostsByCategory(categoryName);
                 setPosts(fetchedPosts);
-            } catch (error) {
+            } catch (error) { 
                 setError(error);
             } finally {
                 setLoading(false);
