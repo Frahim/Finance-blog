@@ -121,7 +121,7 @@ export default function PostsByCategory({ categoryName, style = "default" }) {
                                     <h2>{categoryName}</h2>
                                 </div>
                                 <div className='right_part'>
-                                    <Link href={`/post/${filteredCategory.uri}`} className="viewall">
+                                    <Link href={filteredCategory.uri} className="viewall">
                                         View All
                                         <span className="arrow-cat">
                                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -218,7 +218,7 @@ export default function PostsByCategory({ categoryName, style = "default" }) {
                                     <h2>{categoryName}</h2>
                                 </div>
                                 <div className='right_part'>
-                                    <Link href={`/post/${filteredCategory.uri}`} className="viewall">
+                                    <Link href={filteredCategory.uri} className="viewall">
                                         View All
                                         <span className="arrow-cat">
                                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -376,7 +376,7 @@ export default function PostsByCategory({ categoryName, style = "default" }) {
                                     <h2>{categoryName}</h2>
                                 </div>
                                 <div className='right_part'>
-                                    <Link href={`/post/${filteredCategory.uri}`} className="viewall fc-dark">
+                                    <Link href={filteredCategory.uri} className="viewall fc-dark">
                                         View All
                                         <span className="arrow-cat">
                                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -465,7 +465,7 @@ export default function PostsByCategory({ categoryName, style = "default" }) {
                                     <h2>{categoryName}</h2>
                                 </div>
                                 <div className='right_part'>
-                                    <Link href={`/post/${filteredCategory.uri}`} className="viewall fc-dark">
+                                    <Link href={filteredCategory.uri} className="viewall fc-dark">
                                         View All
                                         <span className="arrow-cat">
                                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -542,7 +542,7 @@ export default function PostsByCategory({ categoryName, style = "default" }) {
                                     <h2>{categoryName}</h2>
                                 </div>
                                 <div className='right_part'>
-                                    <Link href={`/post/${filteredCategory.uri}`} className="viewall fc-dark">
+                                    <Link href={filteredCategory.uri} className="viewall fc-dark">
                                         View All
                                         <span className="arrow-cat">
                                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">

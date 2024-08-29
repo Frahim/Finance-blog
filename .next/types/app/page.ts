@@ -1,4 +1,4 @@
-// File: G:\Project\Finance-HWP\app\page.js
+// File: G:\Project\Finance-HWP\Finance-blog\app\page.js
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
