@@ -10,7 +10,7 @@ export default function Contact_cta() {
                     <h3 className='cta_text'>Looking for a Best Business Plan Consultant?</h3>
                 </div>
                 <div className='col-md-3 col-12 contact_now'>
-                    <Link href='/pages/contact'>Contact Now</Link>
+                    <Link href='/contact'>Contact Now</Link>
                 </div>
                 </div>
             </div>
