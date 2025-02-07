@@ -8,6 +8,10 @@ import Categories from '../components/Homesection/popularCategories';
 import PostsByCategory from '../components/Homesection/PostsByCategory';
 
 
+
+
+
+
 export default async function Home() {
   return (
     <>

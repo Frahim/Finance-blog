@@ -1370,7 +1370,7 @@ button.contact_form_submit {
   text-align: center;
 }
 .map_inner p {
-  font-size: 13px;
+  font-size: 13px; 
 }
 .map_bind {
   margin-top: 50px;
@@ -1389,8 +1389,12 @@ button.contact_form_submit {
 img.card-Image-top.Image-fluid {
   width: 100%;
 }
-.socialicon a:hover svg path {
-  fill: #f8952c;
+.socialicon a{
+  color: #111; 
+  font-size: 22px;
+}
+.socialicon a:hover {
+  color: #f8952c;
 }
 h2.m-0.py-4.text-center.fs-36.fw-medium.text-dark1 {
   background: #f8952c;

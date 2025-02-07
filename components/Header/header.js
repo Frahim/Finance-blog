@@ -69,8 +69,8 @@ export default  function Header() {
 
                         </div>
                         <div className="header-grid-container align-items-center gap-3 col-md-3 d-none d-md-block">
-
-                            <Socialmedia/>
+                             <Socialmedia/> 
+                             {/* update */}
                         </div>
                     </div>
                 </div>

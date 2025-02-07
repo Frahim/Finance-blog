@@ -7,10 +7,7 @@ export default function Topbar() {
     return (
         <div className='top_hed_wrapper bg-blue py-3 d-none d-md-block'>
             <div className='container'>
-                <div className='row align-items-center'>
-                    {/* <div className='lang col-3 col-lg-3'>
-                        <LanguageSwitcher />
-                    </div> */}
+                <div className='row align-items-center'>                   
                     <div className='address col-3 col-lg-9 text-center d-flex g-10'>
                        <div className='left-unite'>
                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">

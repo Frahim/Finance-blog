@@ -14,33 +14,26 @@ export default function ContactForm() {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log('Submitting form...', formData);
-  
-    setLoading(true);
-  
+  const handleSubmit = async (formData) => {
     try {
-      const res = await fetch('/api/submit-form', {
+      const response = await fetch('/api/submit-form', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
   
-      console.log('Response:', res);
+      const data = await response.json();
   
-      const data = await res.json();
-      console.log('Response data:', data);
-  
-      setResponse(data);
+      if (response.ok) {
+        console.log('Form submitted successfully:', data);
+      } else {
+        console.error('Error submitting form:', data.message);
+      }
     } catch (error) {
-      console.error('Submission error:', error);
+      console.error('Error:', error.message);
     }
-  
-    setLoading(false);
   };
+  
   
 
   return (
