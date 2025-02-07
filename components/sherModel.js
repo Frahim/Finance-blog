@@ -44,8 +44,7 @@ export function BasicModal() {
                               <h5 className="modal-title text-center fs-30 fw-medium text-clr-dark-1 mb-3" id="exampleModalLabel">Share this Post</h5>
                             <div className="mt-2">
                                 <div className="share-buttons">
-                                    <FacebookShareButton url={shareUrl} quote={title}>
-                                       
+                                    <FacebookShareButton url={shareUrl} quote={title}>                                       
                                        <Image src={facebooksvg} width={48} height={48} class="img-fluid" alt="sicial"/>
                                     </FacebookShareButton>
                                     <TwitterShareButton url={shareUrl} title={title}>

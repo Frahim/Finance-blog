@@ -7,7 +7,7 @@ export default async function getPostBySlug(slug) {
         }
 
         // Construct the full API URL
-        const fullApiUrl = `https://finance.uiexpertz.com/wp-json/wp/v2/posts?slug=${slug}`;
+        const fullApiUrl = `https://financeblogs.mohammadasifhossain.site/wp-json/wp/v2/posts?slug=${slug}`;
 
         const res = await fetch(fullApiUrl);
 

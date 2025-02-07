@@ -2,10 +2,10 @@
 const nextConfig = {
     reactStrictMode: true,
     env: {
-        NEXT_PUBLIC_API_URL: 'https://finance.uiexpertz.com/', // Replace with your actual API URL
+        NEXT_PUBLIC_API_URL: 'https://financeblogs.mohammadasifhossain.site/', // Replace with your actual API URL
     },
     images: {
-        domains: ['finance.uiexpertz.com', '1.gravatar.com'],
+        domains: ['financeblogs.mohammadasifhossain.site', '1.gravatar.com'],
     },
     images: {
         remotePatterns: [
@@ -16,7 +16,7 @@ const nextConfig = {
           },
           {
             protocol: 'https',
-            hostname: 'finance.uiexpertz.com',
+            hostname: 'financeblogs.mohammadasifhossain.site',
             pathname: '/wp-content/uploads/**',
           },
           {

@@ -17,6 +17,9 @@ export default async function Post() {
         <div className="happeningNextWrapper mt-5">
             <div className="row">
                 {allPosts.map((item) => {
+                    const featuredImage = item._embedded?.['wp:featuredmedia']?.[0]?.source_url;
+                   // console.log(`Post: ${item.title.rendered}, Featured Image: ${featuredImage}`);
+
                      const postDate = new Date(item.date); // Assuming post.date is a valid date string                 
                         const formattedDate = postDate.toLocaleString('en-US', {
                             day: 'numeric',
@@ -30,14 +33,14 @@ export default async function Post() {
                             <>
                                 <div key={item.id} className="col-xl-3 mb-3">
                                     <Link href={`/post/${item.slug}`} className="card border-0 text-decoration-none">
-                                        <Image src={item.fimg_url} width={350} height={260} className="card-Image-top Image-fluid" alt="card" />
+                                        <Image src={featuredImage} width={350} height={260} className="card-Image-top Image-fluid" alt="card" />
                                         <div className="card-body">
                                             <div className="nextInfo d-flex align-items-center gap-2">
                                                 <p className="mb-0 nextInfoPra fs-13 fw-medium lh-22 text-dark2 ff-inter">{formattedDate}</p>
-                                                <svg width="1" height="16" viewBox="0 0 1 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                {/* <svg width="1" height="16" viewBox="0 0 1 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <rect width="1" height="16" fill="#969EA3" />
-                                                </svg>
-                                                <p className="mb-0 nextInfoPra fs-13 fw-medium lh-22 text-dark2 ff-inter">2 Attendees</p>
+                                                </svg> */}
+                                                {/* <p className="mb-0 nextInfoPra fs-13 fw-medium lh-22 text-dark2 ff-inter">2 Attendees</p> */}
                                                 <svg width="1" height="16" viewBox="0 0 1 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <rect width="1" height="16" fill="#969EA3" />
                                                 </svg>

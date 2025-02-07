@@ -76,7 +76,7 @@ export default async function Page({ params }) {
             <div className="blog-details-main bg-gray3 pt-100 pb-100">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-8 col-12">
+                        <div className="col-lg-9 col-12">
                             <div className="blog-content-wrapper">
                                 <div className="inner-wrapper  d-flex gap-4">
                                     <div className="blog-details-pra wc-100">
@@ -85,7 +85,7 @@ export default async function Page({ params }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-12 sideberSection">
+                        <div className="col-lg-3 col-12 sideberSection">
                             <SearchComponent />
                             <SidebarComponent />
                         </div>
